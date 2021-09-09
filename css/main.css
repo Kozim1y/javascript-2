@@ -1,0 +1,62 @@
+*
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: 'Faster One', cursive;
+  background: url(../images/background_v8_s22.jpg);
+  background-size: cover;
+  text-align: center;
+} 
+
+.container
+{
+  max-width: 1240px;
+  padding: 0 20px;
+}
+
+.ball
+{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 100px;
+  animation: ball 1s cubic-bezier(0, 0, 0, 0.65) infinite alternate;
+}
+
+@keyframes ball{
+  0%   {transform: rotate(0deg);  bottom:0px;}
+
+  100% {transform: rotate(50deg); bottom: 300px;}
+}
+
+p{
+  font-size: 70px;
+  color: rgb(28, 238, 0);
+  width: 80%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  animation: war 1s linear infinite alternate;
+}
+
+@keyframes war
+{
+  0% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
